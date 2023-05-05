@@ -3,9 +3,8 @@ package org.testing.automation;
 
 
 public class Page {
-
-    static String url;
-    static String title;
+    public String url;
+    public String title;
 
 
     public void goTo(){
