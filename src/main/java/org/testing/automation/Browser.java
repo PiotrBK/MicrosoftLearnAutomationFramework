@@ -5,18 +5,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Browser {
 
-    static WebDriver driver = new ChromeDriver();
+    public WebDriver driver;
 
+    public Browser(){
 
-    public static void goTo(String url){
-        driver.get(url);
+       this.driver = new ChromeDriver();
     }
 
-    public static String title(){
+
+    public void goTo(String url){
+        this.driver.get(url);
+    }
+
+    public String title(){
         return driver.getTitle();
     }
 
-    public static void close(){
+    public void close(){
         driver.close();
     }
 
