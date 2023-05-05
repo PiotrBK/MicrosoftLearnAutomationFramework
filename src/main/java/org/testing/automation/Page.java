@@ -1,6 +1,6 @@
 package org.testing.automation;
 
-import org.testing.automation.Browser;
+
 
 public class Page {
 
@@ -8,7 +8,7 @@ public class Page {
     static String title;
 
 
-    public void goTo(String url){
+    public void goTo(){
         Browser.goTo(url);
 
     }
