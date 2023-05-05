@@ -5,11 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Browser {
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
     public Browser(){
 
-       this.driver = new ChromeDriver();
+       driver = new ChromeDriver();
     }
 
 
@@ -23,6 +23,11 @@ public class Browser {
 
     public void close(){
         driver.close();
+    }
+    public String getUrl(){
+        String currentUrl = driver.getCurrentUrl();
+
+        return currentUrl;
     }
 
 }
