@@ -26,16 +26,15 @@ public class HomePage {
 
 
     public void goTo(){
-        Browser browser= new Browser();
-        browser.goTo(url);
+        driver.get(url);
 
 
     }
 
 
     public boolean isAt() {
-        Browser browser = new Browser();
-        return browser.title().equals(title);
+
+        driver.getTitle().equals(title);
 
 
     }
