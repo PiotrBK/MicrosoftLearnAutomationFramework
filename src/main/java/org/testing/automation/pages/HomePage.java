@@ -34,7 +34,7 @@ public class HomePage {
 
     public boolean isAt() {
 
-        driver.getTitle().equals(title);
+        return driver.getTitle().equals(title);
 
 
     }
