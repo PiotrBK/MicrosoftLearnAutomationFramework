@@ -15,9 +15,9 @@ public class HomePage {
     WebDriver driver;
 
 
-    private String url = "https://learn.microsoft.com/pl-pl/";
+    private final String url = "https://learn.microsoft.com/pl-pl/";
 
-    private String title= "Microsoft Learn: Zdobywanie umiejętności, które otwierają drzwi w Twojej karierze";
+    private final String title= "Microsoft Learn: Zdobywanie umiejętności, które otwierają drzwi w Twojej karierze";
 
     @FindBy(id = "welcome-page-search-form-autocomplete-input")
     private WebElement searchbox;
