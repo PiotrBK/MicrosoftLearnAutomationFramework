@@ -47,7 +47,7 @@ public class SearchPage {
     }
 
     public void clickFirstResult(){
-        WebElement firstResult = searchResults.get(0).findElement(By.cssSelector("li.margin-top-sm:nth-child(1) > h2:nth-child(1))");
+        WebElement firstResult = searchResults.get(0).findElement(By.cssSelector("li.margin-top-sm:nth-child(1) > h2:nth-child(1))"));
         firstResult.click();
 
     }
